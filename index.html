@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.min.js" defer></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll("#about, #skills, #portfolio, #contact");
+    
+            function animateSections() {
+                sections.forEach(function (section) {
+                    section.classList.add("animate__animated", "animate__slideInRight");
+                });
+            }
+    
+            animateSections(); // Memanggil fungsi animateSections() saat halaman dimuat
+        });
+    </script>
+    
+    <title>Portofolio Saya</title>
+</head>
+<body>
+    <header class="bg-dark text-white py-4" style="background-image: url('img/Background1.jpg'); background-size: cover;">
+        <div class="container text-center">
+            <div class="profile-picture">
+                <img src="img/profile3.png" alt="Foto Profil" class="rounded-circle">
+            </div>
+            <h1 class="my-4">Fernanda Wawang Azraqi</h1>
+            <p>Informatics Student</p>
+        </div>
+    </header>    
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mx-auto">
+        <div class="container">
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang Saya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Keahlian</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>       
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <p>
+                Hi, saya adalah Fernanda Wawang Azraqi. Saya lahir pada 10 Maret 2003 dan saat ini saya adalah seorang mahasiswa di Universitas Muhammadiyah Malang, mengambil program studi Informatika angkatan 2021. Saya memiliki hasrat yang mendalam dalam coding dan pemrograman. Menyusun solusi kreatif dan memecahkan masalah adalah hal yang saya nikmati ketika saya mengembangkan perangkat lunak.
+            </p>
+            <p>
+                Saya bangga memiliki tingkat kepercayaan diri yang baik dan kemampuan untuk berinteraksi dengan orang lain. Saya senang bergaul, suka mempelajari hal baru, dan selalu bersemangat untuk mengejar pengetahuan dan keterampilan baru. Selain coding, saya juga menikmati bermain musik dan berpartisipasi aktif dalam berbagai organisasi. Dengan minat yang beragam ini, saya berusaha untuk menjadi individu yang berpengetahuan luas dan siap menghadapi tantangan apa pun.
+            </p>
+        </div>
+    </section>
+    
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2>Keahlian</h2>
+            <ul class="list-unstyled">
+                <li>
+                    <p>UI/UX Design <span class="float-right">70%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </li>
+                <li>
+                    <p>HTML, CSS, JavaScript <span class="float-right">95%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </li>
+                <li>
+                    <p>Wordpress <span class="float-right">80%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </li>
+                <li>
+                    <p>Python <span class="float-right">85%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </li>
+                <li>
+                    <p>Flutter, Kotlin <span class="float-right">80%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </li>                
+                <li>
+                    <p>Logo Design <span class="float-right">90%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </li>
+                <li>
+                    <p>Photoshop, Corel Draw <span class="float-right">90%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </li>
+                <li>
+                    <p>Video Editing <span class="float-right">87%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 87%" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </li>
+                <li>
+                    <p>Photography <span class="float-right">76%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2>Portofolio</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project">
+                        <div class="project-background">
+                            <img src="img/proyek1.png" alt="Proyek 1" class="img-fluid">
+                            <h3>Desain Feed Instagram Himpunan Mahasiswa Informatika</h3>
+                            <p>Proyek ini adalah sebuah desain grafis yang merupakan farewell dari kabinet Arkana Baswara HMIF dalam kepengurusan Himpunan Mahasiswa Informatika Universitas Muhammadiyah Malang. Desain ini diunggah di media sosial Instagram.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project">
+                        <div class="project-background">
+                            <img src="img/web risen.png" alt="Proyek 2" class="img-fluid">
+                            <img src="img/web risen2.png" style="margin-bottom: 20px;" alt="Proyek 2.1" class="img-fluid">
+                            <h3>Pembuatan Website Risenmedic</h3>
+                            <p>Website Risenmedic adalah platform yang dirancang untuk memudahkan pengguna dalam berbagai aspek perawatan kesehatan. Dengan menggunakan MySQL sebagai database, website ini memberikan layanan untuk:</p>
+                            <ul>
+                                <li>Membeli obat secara online.</li>
+                                <li>Mencari informasi obat dan penyakit.</li>
+                                <li>Mencari lokasi klinik atau apotek terdekat.</li>
+                            </ul>
+                            <p>Website ini juga mengintegrasikan API Google Maps untuk membantu pengguna menemukan lokasi klinik terdekat dengan mudah.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project">
+                        <div class="project-background">
+                            <img src="img/Poster Digicom.png" style="margin-bottom: 20px;" alt="Proyek 3" class="img-fluid">
+                            <h3>Desain Poster Digicom</h3>
+                            <p>Proyek ini adalah desain poster yang dibuat menggunakan aplikasi CorelDRAW untuk mempromosikan lomba setingkat nasional DIGICOM, yang diikuti oleh seluruh universitas Muhammadiyah se-Jawa Timur. Poster ini bertujuan untuk memberikan informasi dan memperkenalkan lomba tersebut kepada calon peserta.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Kontak</h2>
+            <p>Email: <a href="mailto:fernandaazra@gmail.com">fernandaazra@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/fernanda-wawang-azraqi-383980225/">Profil LinkedIn Saya</a></p>
+            <p>WhatsApp :<a href="https://api.whatsapp.com/send/?phone=6285937017367&text&type=phone_number&app_absent=0">Nomer WhatsApp Saya</a></p>
+        </div>
+    </section>
+</body>
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a href="https://www.instagram.com/ferzaa._" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.twitter.com/username" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/username" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/fernanda-wawang-azraqi-383980225/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center" style="margin-top: 20px;">
+                &copy; Fernanda Wawang Azraqi - 2023
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

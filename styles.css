@@ -1,0 +1,129 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    background-attachment: fixed; /* Menambahkan properti ini untuk efek parallax */
+    background-image: url('img/background1.png');
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Menambahkan posisi relatif untuk elemen header */
+    min-height: 100vh;
+}
+
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    font-size: 24px;
+    margin: 0;
+}
+
+section {
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project {
+    margin-bottom: 20px;
+    min-height: 400px;
+}
+
+.project img {
+    max-width: 100%;
+}
+
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    margin: 0 auto; /* Pusatkan foto profil secara horizontal */
+    margin-top: -200px;
+}
+.profile-picture img {
+    max-width: 450px; /* Anda dapat mengganti nilai ini sesuai keinginan Anda */
+    max-height: 850px; /* Anda juga dapat mengganti nilai ini sesuai keinginan Anda */
+    margin-bottom: 20px;
+}
+
+
+.social-icon {
+    font-size: 30px; /* Sesuaikan ukuran ikon sesuai keinginan */
+    margin: 0 15px; /* Menghilangkan spasi horizontal antara ikon-ikon */
+    color: #fff; /* Warna ikon */
+    transition: transform 0.2s; /* Efek animasi saat hover */
+
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Membesarkan ikon saat di-hover */
+    color: #0BB2FF; /* Warna ikon saat di-hover */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007BFF; /* Warna teks saat hover */
+}
+.project-background {
+    background-color: #E7E7E7; /* Memberikan latar belakang putih */
+    padding: 20px; /* Menambahkan ruang di sekitar setiap proyek */
+    border-radius: 5px; /* Membuat proyek terlihat lebih baik dengan sudut bulat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+}
+/* Tambahkan animasi slide untuk setiap bagian */
+@keyframes slideInRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Terapkan animasi slideInRight untuk bagian yang di-scroll */
+#about, #skills, #portfolio, #contact {
+    animation: slideInRight 1s ease-in-out; /* Atur durasi dan jenis animasi sesuai keinginan */
+    animation-fill-mode: both;
+}
+/* CSS Kustom untuk Tombol Toggler */
+.custom-toggler {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-color: #007bff; /* Warna latar belakang ikon */
+    border-radius: 3px; /* Bulatan sudut ikon */
+    color: white; /* Warna ikon */
+}

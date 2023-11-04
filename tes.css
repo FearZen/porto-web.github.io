@@ -1,0 +1,62 @@
+/* CSS untuk header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333; /* Warna latar belakang header */
+}
+
+.logo img {
+    width: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+/* CSS untuk hero section */
+.hero {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: left;
+    color: white;
+    padding: 100px;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.btn-about {
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-about:hover {
+    background-color: white;
+    color: red;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+/* CSS untuk kreasimu */
+/* Tambahkan gaya untuk elemen-elemen kreatif di sini */
